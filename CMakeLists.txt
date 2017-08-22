@@ -88,6 +88,8 @@ ELSE(ZLIB_FOUND)
     SET (ZLIB_LIBRARY "")
 ENDIF(ZLIB_FOUND)
 
+message(" ***** ZLIB_LIBRARY: ${ZLIB_LIBRARY} *****")
+
 ## Make modules able to see partio library
 # Setup environment variable to link partio
 SET( PARTIO_LIBRARIES partio ${ZLIB_LIBRARY} )
